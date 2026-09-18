@@ -1,21 +1,18 @@
 
-    .container {
+.container {
       position: relative; 
       width: 100%;
       max-width: 600px; 
-    }
-</style>
-<style>
-    .text {
+}
+
+.text {
       position: absolute; 
       top: 50%;         
       left: 50%;        
       transform: translate(-50%, -50%); 
       color: black;   
       font-size: 24px;   
-    }
-</style>
-<style>
+}
   .casino 
         { 
         position:fixed;
@@ -23,5 +20,5 @@
         right:10px;
         width:auto;
         z-index:1000;
-        }
+}
 
