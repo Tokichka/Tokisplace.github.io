@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaster Room</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+
+    <style>
+      body {
+        color: #f2fcff;
+        background-color: #000709;
+      }
+      
+        .move-up-down {
+          animation: mover 0.75s infinite alternate ease-in-out;
+        }
+      
+        @keyframes mover {
+          0% { transform: translateY(320px); }
+          100% { transform: translateY(-20px); }
+        }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>you fucked up.</h1>
+      <img src="images/page3/gaster.png" class="move-up-down"/>
+      
+	  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	  
+	  
+	  
+      <h1>youre gonna die in <span id="countdown">10</span></h1>
+    </center>
+
+    <script>
+      var timeLeft = 10;
+      var countdownElement = document.getElementById('countdown');
+      var redirectUrl = 'https://www.youtube.com/watch?v=hRAeGYHNLag';
+    
+      var timer = setInterval(function() {
+        timeLeft--;
+        countdownElement.textContent = timeLeft;
+        if (timeLeft <= 0) {
+          clearInterval(timer);
+          window.location.href = redirectUrl;
+        }
+      }, 1000);
+      
+      
+      var gaster_tune = document.getElementById("gaster_tune");
+      
+      function boomboxtogglePlay() {
+        gaster_tune.play();
+      };
+      
+      window.onload=boomboxtogglePlay();
+    </script>
+    
+    </center>
+  </body>
+</html>
