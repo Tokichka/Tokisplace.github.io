@@ -13,8 +13,7 @@
       color: black;   
       font-size: 24px;   
 }
-  .casino 
-        { 
+.casino { 
         position:fixed;
         bottom:10px;
         right:10px;
